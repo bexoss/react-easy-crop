@@ -261,6 +261,7 @@ class Cropper extends React.Component {
           src={this.props.image}
           innerRef={el => (this.image = el)}
           onLoad={this.onImgLoad}
+          onError={this.props.onImgError}
           alt=""
           style={{
             transform: `translate(${x}px, ${y}px) scale(${zoom})`,
